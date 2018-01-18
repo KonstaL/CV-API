@@ -1,0 +1,31 @@
+{
+  "name": "cv-api",
+  "version": "1.0.0",
+  "description": "A program for generating sending CV in a JSON-format",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KonstaL/CV-API.git"
+  },
+  "keywords": [
+    "cv",
+    "API",
+    "nodejs"
+  ],
+  "author": "Konsta Lehtinen",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/KonstaL/CV-API/issues"
+  },
+  "homepage": "https://github.com/KonstaL/CV-API#readme",
+  "devDependencies": {
+    "eslint": "^4.15.0",
+    "eslint-config-google": "^0.9.1"
+  },
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
