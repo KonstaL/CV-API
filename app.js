@@ -2,25 +2,24 @@
 
 const express = require('express'),
   app = express(),
-  schema = require('./cvSchema');
+  validator = require('is-my-json-valid'),
+  schema = require('./cvSchema'),
+  cv = require('./cv');
 
 
-  let temp = {
-    name: {
-      firstName: 'Jussi',
-      lastName: 'Törmä'
-    }
-  };
+//configure JSON validator to use schema
+const validate = validator(schema);
+
 
 app.get('/', (req, res) => {
-  if(schema(temp)) {
-    res.json(temp);
+  if(validate(cv)) {
+    res.json(cv);
   } else {
     res.json({failed: true});
   }
 });
 
-app.listen(8080, ()=> {
+app.listen(8081, ()=> {
   console.log('Server started!');
 });
 

@@ -1,6 +1,5 @@
-const validator = require('is-my-json-valid');
 
-var validate = validator({
+module.exports = {
   required: true,
   type: 'object',
   properties: {
@@ -9,15 +8,35 @@ var validate = validator({
       required: ['firstName', 'lastName'],
       properties: {
         firstName: {
-          type: 'string'
+          type: 'string',
+          required: true
         },
         lastName: {
-          type: 'string'
+          type: 'string',
+          required: true
+        }
+      }
+    },
+    summary: {
+      type: 'string',
+      required: true
+    },
+    workExperience: {
+      type: 'object',
+      required: true,
+      properties: {
+        work1: {
+
+        },
+        work2: {
+
+        },
+        work3: {
+
         }
       }
     }
   }
-});
+};
 
 
-module.exports = validate;
