@@ -1,0 +1,131 @@
+{
+  "basics": {
+    "name": "Konsta Lehtinen",
+    "label": "Programmer",
+    "email": "konsta@konstalehtinen.com",
+    "phone": "+358 45 895 5247",
+    "website": "www.konstalehtinen.com",
+    "summary": "Konsta is a aspiring programmer who wishes to someday write a full single page application with dogescript. He likes coffee, buildtools and automation. Often stays up late to get 100% from coding assignments ",
+    "location": {
+      "postalCode": "33500",
+      "city": "Tampere",
+      "countryCode": "FI",
+      "region": "Länsi-Suomi"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "Konsta Lehtinen",
+        "url": "https://www.linkedin.com/in/konsta-lehtinen/"
+      },
+      {
+        "network": "GitHub",
+        "username": "KonstaL",
+        "url": "https://github.com/konstal"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Nokia",
+      "position": "Trainee",
+      "website": "http://nokia.com",
+      "startDate": "2017-10-01",
+      "endDate": "2017-12-31",
+      "summary": "Worked as trainee developer. Developed a web-based UI-prototype for existing CLI-tool",
+      "highlights": [
+        "Learned real life sofware develoment",
+        "Got familiar with virtualization technologies"
+      ]
+    },
+    {
+      "company": "Click Henkilöstöpalvelu",
+      "position": "Agency worker",
+      "website": "http://www.click-hp.fi/",
+      "startDate": "2016-03-01",
+      "endDate": "2016-08-18",
+      "summary": "Worked in multiple jobs while waiting for college to start. I mainly in construction"
+    }
+  ],
+  
+  "volunteer": [
+    {
+      "organization": "Tracon",
+      "position": "Committee member",
+      "website": "http://tracon.fi",
+      "startDate": "2016-10-01",
+      "endDate": "2017-10-01",
+      "summary": "Managed most of Tracon 2017´s computers and related hardware"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Tampere University of Applied Science",
+      "area": "Business information management",
+      "studyType": "Bachelor",
+      "startDate": "2016-09-01",
+      "endDate": "2019-12-31"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Vanilla Web Development",
+      "level": "Master",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "Javascript"
+      ]
+    },
+    {
+      "name": "Web Libraries/frameworks",
+      "level": "Competent",
+      "keywords": [
+        "Node",
+        "React",
+        "Redux"
+      ]
+    },
+    {
+      "name": "Mobile Development",
+      "level": "Novice",
+      "keywords": [
+        "Android",
+        "React Native"
+      ]
+    },
+    {
+      "name": "Java",
+      "level": "Proficient",
+      "keywords": [
+        "Object Oriented Programming",
+        "JavaFX"
+      ]
+    }
+  ],
+  "interests": [
+    {
+      "name": "Coding in general",
+      "keywords": [
+        "Build automation",
+        "Full-Stack applications"
+      ]
+    },
+    {
+      "name": "Caffeinated drinks",
+      "keywords": [
+        "Coffee",
+        "Tea",
+        "Red bull"
+      ]
+    },
+    {
+      "name": "Self-improvement",
+      "keywords": [
+        "Motivation",
+        "Efficiency",
+        "Health"
+      ]
+    }
+  ]
+}

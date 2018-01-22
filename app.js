@@ -2,24 +2,35 @@
 
 const express = require('express'),
   app = express(),
-  validator = require('is-my-json-valid'),
-  schema = require('./cvSchema'),
-  cv = require('./cv');
+  Ajv = require('ajv'),
+  ajv = new Ajv(),
+  schema = require('./schema.json'),
+  cv = require('./resume/resume.json');
 
 
 //configure JSON validator to use schema
-const validate = validator(schema);
+let validate = ajv.compile(schema);
+
+//app setup
+app.use(express.static(__dirname + '/public'));
+
+
 
 
 app.get('/', (req, res) => {
   if(validate(cv)) {
     res.json(cv);
   } else {
-    res.json({failed: true});
+    res.status(500).send('<h1>CV validation failed</h1>');
   }
 });
 
-app.listen(8081, ()=> {
+app.get('/gui', (req, res) => {
+  res.sendFile('public/myresume.html', {root: __dirname});
+});
+
+
+app.listen(8080, ()=> {
   console.log('Server started!');
 });
 
